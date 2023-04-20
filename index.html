@@ -9,11 +9,11 @@
 	<nav class="navbar">
 		<div class="nav-links">
 			<ul>
-				<li><a href="#propos" id="link-propos">À propos de moi</a></li>
-				<li><a href="#projets" id="link-parcours">Mon parcours</a></li>
-				<li><a href="#compétences" id="link-competences">Mes compétences</a></li>
-				<li><a href="#loisirs" id="link-loisirs">Mes loisirs</a></li>
-				<li><a href="#contact" id="link-contact">Me contacter</a></li>
+				<li><a href="#propos" id="link-propos" class="scroll-link">À propos de moi</a></li>
+				<li><a href="#projets" id="link-parcours" class="scroll-link">Mon parcours</a></li>
+				<li><a href="#compétences" id="link-competences" class="scroll-link">Mes compétences</a></li>
+				<li><a href="#loisirs" id="link-loisirs" class="scroll-link">Mes loisirs</a></li>
+				<li><a href="#contact" id="link-contact" class="scroll-link">Me contacter</a></li>
 			</ul>
 		</div>
 		<img src="picture/menu.png" class="menu-hamburger">
@@ -160,5 +160,26 @@
 		function toggleMobileMenu() {
   			navLinks.classList.toggle('mobile-menu')
 		}
+
+		// Récupérer le lien avec la classe "scroll-link"
+		const scrollLink = document.querySelector('.scroll-link')
+
+		// Ajouter un écouteur d'événement pour le clic sur le lien
+		scrollLink.addEventListener('click', (event) => {
+  			// Empêcher le comportement par défaut du lien
+  			event.preventDefault()
+
+  			// Récupérer l'élément de destination avec l'ID spécifié dans le lien
+  			const destination = document.querySelector(event.target.hash)
+
+  			// Calculer la position de l'élément de destination sur la page
+  			const position = destination.offsetTop
+
+  			// Animer le défilement jusqu'à la position de l'élément de destination
+  			window.scrollTo({
+    				top: position,
+    				behavior: 'smooth'
+  			})
+		})
 </script>
 </html>
