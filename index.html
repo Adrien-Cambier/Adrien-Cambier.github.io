@@ -146,40 +146,44 @@
         const menuHamburger = document.querySelector(".menu-hamburger")
 		const navLinks = document.querySelector(".nav-links")
 
-		// Ajouter un événement "click" à chaque lien de menu
-		document.querySelector("#link-propos").addEventListener("click", toggleMobileMenu)
-		document.querySelector("#link-parcours").addEventListener("click", toggleMobileMenu)
-		document.querySelector("#link-competences").addEventListener("click", toggleMobileMenu)
-		document.querySelector("#link-loisirs").addEventListener("click", toggleMobileMenu)
-		document.querySelector("#link-contact").addEventListener("click", toggleMobileMenu)
+	// Ajouter un événement "click" à chaque lien de menu
+	document.querySelector("#link-propos").addEventListener("click", toggleMobileMenu)
+	document.querySelector("#link-parcours").addEventListener("click", toggleMobileMenu)
+	document.querySelector("#link-competences").addEventListener("click", toggleMobileMenu)
+	document.querySelector("#link-loisirs").addEventListener("click", toggleMobileMenu)
+	document.querySelector("#link-contact").addEventListener("click", toggleMobileMenu)
 
-		menuHamburger.addEventListener('click', toggleMobileMenu)
-		menubutton.addEventListener('click', toggleMobileMenu)
+	menuHamburger.addEventListener('click', toggleMobileMenu)
+	menubutton.addEventListener('click', toggleMobileMenu)
 
-		// Fonction pour ajouter ou supprimer la classe "mobile-menu"
-		function toggleMobileMenu() {
-  			navLinks.classList.toggle('mobile-menu')
-		}
+	// Fonction pour ajouter ou supprimer la classe "mobile-menu"
+	function toggleMobileMenu() {
+  		navLinks.classList.toggle('mobile-menu')
+	}
 
-		// Récupérer le lien avec la classe "scroll-link"
-		const scrollLink = document.querySelector('.scroll-link')
+	// Récupérer le lien avec la classe "scroll-link"
+	const scrollLink = document.querySelector('.scroll-link')
 
-		// Ajouter un écouteur d'événement pour le clic sur le lien
-		scrollLink.addEventListener('click', (event) => {
-  			// Empêcher le comportement par défaut du lien
-  			event.preventDefault()
+	// Ajouter un écouteur d'événement pour le clic sur le lien
+	scrollLink.addEventListener('click', (event) => {
+  		// Empêcher le comportement par défaut du lien
+  		event.preventDefault()
 
-  			// Récupérer l'élément de destination avec l'ID spécifié dans le lien
-  			const destination = document.querySelector(event.target.hash)
+  		// Récupérer l'élément de destination avec l'ID spécifié dans le lien
+  		const destination = document.querySelector(event.target.hash)
 
-  			// Calculer la position de l'élément de destination sur la page
-  			const position = destination.offsetTop
+  		// Calculer la position de l'élément de destination sur la page
+  		const position = destination.offsetTop
+  		
+  		// Animer le défilement jusqu'à la position de l'élément de destination
+  		window.scrollTo({
+    			top: position,
+    			behavior: 'smooth'
+  		})
+	})
 
-  			// Animer le défilement jusqu'à la position de l'élément de destination
-  			window.scrollTo({
-    				top: position,
-    				behavior: 'smooth'
-  			})
-		})
+	window.onbeforeunload = function () {
+  		window.scrollTo(0,0);
+	}
 </script>
 </html>
