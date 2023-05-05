@@ -30,6 +30,7 @@ header{
 	margin-right:1em;
 	padding-top:1em;
 	padding-bottom:1em;
+	transition: 0.5s ease;
 }
 .navbar li:hover{
 	color:black;
@@ -38,7 +39,7 @@ header{
 }
 .navbar li:hover a{
 	color:black;
-	transition: 1s ease;
+	transition: 0.5s ease;
 }
 .navbar .nav-links ul{
 	display:flex;
@@ -57,6 +58,7 @@ header{
 	height:100%;
 	align-items:center;
 	display:flex;
+	transition: 0.5s ease;
 }
 .navbar .menu-hamburger{
 	display:none;
@@ -331,7 +333,6 @@ p{
 	display:flex;
 	align-items:center;
 	flex-direction:column;
-
 }
 .parcours{
 	background-color:#f6f6f6;
@@ -401,8 +402,9 @@ span button:hover{
 	font-size:1em;
 }
 .download:hover{
-	transform:scale(1.1);
-	transition:0.25s;
+	color:white;
+	background-color:#ff5050;
+	transition:0.5s;
 }
 .download-container{
 	display:flex;
