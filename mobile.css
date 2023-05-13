@@ -6,6 +6,7 @@ header{
 }
 .mobile-menu{
 	margin-top:8em;
+	transition:0.5s ease-in-out;
 }
 .nav-links{
 	height:35em;
@@ -182,4 +183,7 @@ footer{
 }
 body{
 	overflow-x:hidden;
+}
+.top{
+	margin-top:1em;
 }
