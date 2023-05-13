@@ -81,7 +81,7 @@
 				<div class="part">
 					<img class="logo" src="picture/codage.png">
 					<p class="logo-title">Codage</p>
-					<p>Html | Css | Python | Php</p>
+					<p>Html | Css | Python | Php | Javascript</p>
 				</div>
 				<div class="part">
 					<img class="logo" src="picture/arabe.png">
@@ -182,8 +182,10 @@
   		})
 	})
 
-	window.onbeforeunload = function () {
-  		window.scrollTo(0,0);
-	}
+	window.addEventListener('load', function() {
+  		var form = document.querySelector('.mail'); // Sélectionne le formulaire
+
+  		form.reset(); // Réinitialise les champs du formulaire
+	});
 </script>
 </html>
