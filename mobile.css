@@ -167,3 +167,19 @@ footer{
 .contain-text p{
 	margin:0;
 }
+.title{
+	color:white;
+	font-family:AnteriSignature;
+	font-size:5em;
+	margin:0.25em;
+	width:8em;
+}
+.subtitle{
+	font-family:LeagueSpartan;
+	color:#a6a6a6;
+	font-size:2em;
+	margin:1em;
+}
+body{
+	overflow-x:hidden;
+}
