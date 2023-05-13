@@ -274,6 +274,7 @@ p{
 	background-color:#f6f6f6;
 	border-radius:1em;
 	padding:0.5em;
+	box-shadow: 0 0 10px rgba(1,1,1,.2);
 }
 .entertainement img{
 	width:25em;
@@ -342,6 +343,7 @@ p{
 	margin-top:1em;
 	display:flex;
 	width:50em;
+	box-shadow: 0 0 10px rgba(1,1,1,.2);
 }
 .parcours span{
 	margin-left:1em;
@@ -544,6 +546,7 @@ h3{
 		transform:translateX(-50%);
 		padding:0.5em;
 		border-radius:1em;
+		box-shadow: 0 0 10px rgba(1,1,1,.2);
 	}
 	.contact-all section{
 		display:none;
