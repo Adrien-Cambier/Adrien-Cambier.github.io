@@ -13,6 +13,7 @@
 				<li><a href="#propos" id="link-propos" class="scroll-link">À propos de moi</a></li>
 				<li><a href="#projets" id="link-parcours" class="scroll-link">Mon parcours</a></li>
 				<li><a href="#compétences" id="link-competences" class="scroll-link">Mes compétences</a></li>
+				<li><a href="#portfolio" id="link-portfolio" class="scroll-link">Mon Portfolio</a></li>
 				<li><a href="#loisirs" id="link-loisirs" class="scroll-link">Mes loisirs</a></li>
 				<li><a href="#contact" id="link-contact" class="scroll-link">Me contacter</a></li>
 			</ul>
@@ -96,6 +97,51 @@
 				</div>
 			</div>
 		<section></section>
+		<h1 id="portfolio">Mon Portfolio</h1>
+		<div class="line"></div>
+		<div class="block">
+			<div class="block_bis">
+			<a class="block_portfolio" href="">
+				<span class="hover_animation"><h1>Cliquez pour en Savoir Plus</h1></span>
+				<img class="block_picture" src="picture/web.jpg">
+				<div class="block_text">
+				<p class="logo-title">Réalisation de site Web</p>
+						<p>Html - Css</p>
+						<p class="black">Template de site Web sur nos Passions réalisé en binôme</p>
+				</div>
+			</a>
+			<a class="block_portfolio" href="">
+				<span class="hover_animation"><h1>Cliquez pour en Savoir Plus</h1></span>
+				<img class="block_picture" src="picture/réseau.jpg">
+				<div class="block_text">
+				<p class="logo-title">Réalisation d'un Réseau Lan</p>
+						<p>Packet Tracer</p>
+						<p class="black">Conception d'un petit réseau local interconnecté</p>
+				</div>
+			</a>
+			</div>
+			<div class="block_bis">
+			<a class="block_portfolio" href="">
+				<span class="hover_animation"><h1>Cliquez pour en Savoir Plus</h1></span>
+				<img class="block_picture" src="picture/câbles.jpg">
+				<div class="block_text">
+				<p class="logo-title">Câblages et connections</p>
+						<p>Cisco</p>
+						<p class="black">Relier des routeurs/switchs et configurer des équipements Cisco</p>
+				</div>
+			</a>
+			<a class="block_portfolio" href="">
+				<span class="hover_animation"><h1>Cliquez pour en Savoir Plus</h1></span>
+				<img class="block_picture" src="picture/satellite.jpg">
+				<div class="block_text">
+				<p class="logo-title">Projet Thales</p>
+						<p>Python - Web</p>
+						<p class="black">Réaliser un extracteur de trames et les afficher sur une page Web</p>
+				</div>
+			</a>
+			</div>
+		</div>
+		<section></section>
 		<h1 id="loisirs">Mes loisirs</h1>
 		<div class="line"></div>
 			<div class="contain">
@@ -153,6 +199,7 @@
 	document.querySelector("#link-competences").addEventListener("click", toggleMobileMenu)
 	document.querySelector("#link-loisirs").addEventListener("click", toggleMobileMenu)
 	document.querySelector("#link-contact").addEventListener("click", toggleMobileMenu)
+	document.querySelector("#link-portfolio").addEventListener("click", toggleMobileMenu)
 
 	menuHamburger.addEventListener('click', toggleMobileMenu)
 	menubutton.addEventListener('click', toggleMobileMenu)
@@ -184,9 +231,49 @@
 	})
 
 	window.addEventListener('load', function() {
-  		var form = document.querySelector('.mail'); // Sélectionne le formulaire
-
-  		form.reset(); // Réinitialise les champs du formulaire
+  		var textareas = document.querySelector('.mail');
+  
+  		for (var i = 0; i < textareas.length; i++) {
+    			textareas[i].value = ''; // Réinitialise la valeur du champ à une chaîne vide
+  		}
 	});
+
+	// Lorsque la page est chargée ou rafraîchie
+	window.addEventListener('beforeunload', function() {
+  	window.scrollTo(0, 0); // Défilement vers le haut de la page
+	})
+
+	// Fonction pour vérifier si un élément est visible dans la fenêtre
+	function isVisible(element) {
+  	var rect = element.getBoundingClientRect();
+  	var windowHeight = window.innerHeight || document.documentElement.clientHeight;
+  
+  	return (
+   	rect.top >= 0 &&
+    	rect.left >= 0 &&
+    	rect.bottom <= windowHeight &&
+    	rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  	);
+	}
+
+	// Fonction pour attribuer ou supprimer la classe "unload"
+	function handleVisibility() {
+  		var elements = document.querySelectorAll('*');
+  
+  		for (var i = 0; i < elements.length; i++) {
+    			var element = elements[i];
+    
+    			if (isVisible(element)) {
+      				element.classList.remove('unload');
+    			} else {
+      				element.classList.add('unload');
+    			}
+  		}
+	}
+
+	// Appeler la fonction handleVisibility lorsque la fenêtre est chargée et redimensionnée
+	window.addEventListener('DOMContentLoaded', handleVisibility);
+	window.addEventListener('resize', handleVisibility);
+
 </script>
 </html>
