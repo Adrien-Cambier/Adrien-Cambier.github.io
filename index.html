@@ -18,7 +18,10 @@
 				<li><a href="#contact" id="link-contact" class="scroll-link">Me contacter</a></li>
 			</ul>
 		</div>
-		<img src="picture/menu.png" class="menu-hamburger">
+		<div class="menu-hamburger">
+			<img src="picture/menu.png" class="open">
+			<img src="picture/cross.png" class="close">
+		</div>
 	</nav>
 </header>
 <body>
@@ -101,7 +104,7 @@
 		<div class="line"></div>
 		<div class="block">
 			<div class="block_bis">
-			<a class="block_portfolio" href="">
+			<span class="block_portfolio" id="web">
 				<span class="hover_animation"><h1>Cliquez pour en Savoir Plus</h1></span>
 				<img class="block_picture" src="picture/web.jpg">
 				<div class="block_text">
@@ -109,8 +112,8 @@
 						<p>Html - Css</p>
 						<p class="black">Template de site Web sur nos Passions réalisé en binôme</p>
 				</div>
-			</a>
-			<a class="block_portfolio" href="">
+			</span>
+			<span class="block_portfolio" id="réseau">
 				<span class="hover_animation"><h1>Cliquez pour en Savoir Plus</h1></span>
 				<img class="block_picture" src="picture/réseau.jpg">
 				<div class="block_text">
@@ -118,10 +121,10 @@
 						<p>Packet Tracer</p>
 						<p class="black">Conception d'un petit réseau local interconnecté</p>
 				</div>
-			</a>
+			</span>
 			</div>
 			<div class="block_bis">
-			<a class="block_portfolio" href="">
+			<span class="block_portfolio" id="câbles">
 				<span class="hover_animation"><h1>Cliquez pour en Savoir Plus</h1></span>
 				<img class="block_picture" src="picture/câbles.jpg">
 				<div class="block_text">
@@ -129,8 +132,8 @@
 						<p>Cisco</p>
 						<p class="black">Relier des routeurs/switchs et configurer des équipements Cisco</p>
 				</div>
-			</a>
-			<a class="block_portfolio" href="">
+			</span>
+			<span class="block_portfolio" id="thales">
 				<span class="hover_animation"><h1>Cliquez pour en Savoir Plus</h1></span>
 				<img class="block_picture" src="picture/satellite.jpg">
 				<div class="block_text">
@@ -138,28 +141,28 @@
 						<p>Python - Web</p>
 						<p class="black">Réaliser un extracteur de trames et les afficher sur une page Web</p>
 				</div>
-			</a>
+			</span>
 			</div>
 		</div>
 		<section></section>
 		<h1 id="loisirs">Mes loisirs</h1>
 		<div class="line"></div>
 			<div class="contain">
-				<a class="entertainement" href="">
+				<div class="entertainement">
 					<img src="https://static.wixstatic.com/media/294cfc_b2b989f904d142be965cede7ccc656f5~mv2.jpg/v1/crop/x_29,y_0,w_707,h_470/fill/w_560,h_358,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/294cfc_b2b989f904d142be965cede7ccc656f5~mv2.jpg">
 					<p class="logo-title">Le Piano</p>
 					<p class="black">Le piano est un instrument qui me passionne depuis mon enfance. Je joue souvent des pièces d'Animenz qui sont des arrangements de musiques car il utilise beaucoup de techniques classiques et me permet de m'améliorer toujours plus au piano vu la difficulté des pièces, représentant ainsi pour moi un véritable challenge.</p>
-				</a>
+				</div>
 				<div class="entertainement">
 					<img src="https://www.destinationchiangmai-fr.com/wp-content/uploads/2022/09/soleil-sur-le-temple-blanc.jpg">
 					<p class="logo-title">Les Voyages</p>
 					<p class="black">J'aime beaucoup voyager et découvrir de nouvelles cultures. J'ai voyagé dans de nombreux pays d'Europe et d'Asie mais le pays qui m'a le plus marqué c'est la Thaïlande. En effet, j'y vais tous les ans et là-bas, on retrouve une atmosphère paisible et calme vraiment différente de ce qu'on à l'habitude en Europe.</p>
 				</div>
-				<a class="entertainement" href="">
+				<div class="entertainement">
 					<img src="https://comarketing-news.fr/wp-content/uploads/chiffres-jeu-video.jpg">
 					<p class="logo-title">Les Jeux Vidéos</p>
 					<p class="black">Les jeux vidéos me permettent de décontracter et de me plonger dans un tout autre univers. J'aime les jeux où l'on peut faire preuve de créativité comme Minecraft qui est selon moi l'un des jeux bacs à sable les plus abouti à ce jour. C'est également cette passion des jeux qui m'a poussé à m'intéresser au domaine de l'informatique.</p>
-				</a>
+				</div>
 			</div>
 		<section></section>
 		<h1 id="contact">Me contacter</h1>
@@ -185,95 +188,42 @@
 		</div>
 		<h3> Droits d'auteur © 2023 Tous droits réservés - Adrien Cambier </h3>
 	</div>
+<div class="page_thales">
+	<div class="page">
+	<button class="return" src="picture/cross.png">Retour à l'accueil</button>
+		<div class="page_contain">
+			Thales
+		</div>
+	</div>
+</div>
+<div class="page_web">
+	<div class="page">
+	<button class="return" src="picture/cross.png">Retour à l'accueil</button>
+		<div class="page_contain">
+			Web
+		</div>
+	</div>
+</div>
+<div class="page_câbles">
+	<div class="page">
+	<button class="return" src="picture/cross.png">Retour à l'accueil</button>
+		<div class="page_contain">
+			Câbles
+		</div>
+	</div>
+</div>
+<div class="page_réseau">
+	<div class="page">
+	<button class="return" src="picture/cross.png">Retour à l'accueil</button>
+		<div class="page_contain">
+			Réseau
+		</div>
+	</div>
+</div>
 </body>
 <footer>
 	<h2>Site réalisé par Adrien Cambier</h2>
 </footer>
-<script>
-        const menuHamburger = document.querySelector(".menu-hamburger")
-		const navLinks = document.querySelector(".nav-links")
-
-	// Ajouter un événement "click" à chaque lien de menu
-	document.querySelector("#link-propos").addEventListener("click", toggleMobileMenu)
-	document.querySelector("#link-parcours").addEventListener("click", toggleMobileMenu)
-	document.querySelector("#link-competences").addEventListener("click", toggleMobileMenu)
-	document.querySelector("#link-loisirs").addEventListener("click", toggleMobileMenu)
-	document.querySelector("#link-contact").addEventListener("click", toggleMobileMenu)
-	document.querySelector("#link-portfolio").addEventListener("click", toggleMobileMenu)
-
-	menuHamburger.addEventListener('click', toggleMobileMenu)
-	menubutton.addEventListener('click', toggleMobileMenu)
-
-	// Fonction pour ajouter ou supprimer la classe "mobile-menu"
-	function toggleMobileMenu() {
-  		navLinks.classList.toggle('mobile-menu')
-	}
-
-	// Récupérer le lien avec la classe "scroll-link"
-	const scrollLink = document.querySelector('.scroll-link')
-
-	// Ajouter un écouteur d'événement pour le clic sur le lien
-	scrollLink.addEventListener('click', (event) => {
-  		// Empêcher le comportement par défaut du lien
-  		event.preventDefault()
-
-  		// Récupérer l'élément de destination avec l'ID spécifié dans le lien
-  		const destination = document.querySelector(event.target.hash)
-
-  		// Calculer la position de l'élément de destination sur la page
-  		const position = destination.offsetTop
-  		
-  		// Animer le défilement jusqu'à la position de l'élément de destination
-  		window.scrollTo({
-    			top: position,
-    			behavior: 'smooth'
-  		})
-	})
-
-	window.addEventListener('load', function() {
-  		var textareas = document.querySelector('.mail');
-  
-  		for (var i = 0; i < textareas.length; i++) {
-    			textareas[i].value = ''; // Réinitialise la valeur du champ à une chaîne vide
-  		}
-	});
-
-	// Lorsque la page est chargée ou rafraîchie
-	window.addEventListener('beforeunload', function() {
-  	window.scrollTo(0, 0); // Défilement vers le haut de la page
-	})
-
-	// Fonction pour vérifier si un élément est visible dans la fenêtre
-	function isVisible(element) {
-  	var rect = element.getBoundingClientRect();
-  	var windowHeight = window.innerHeight || document.documentElement.clientHeight;
-  
-  	return (
-   	rect.top >= 0 &&
-    	rect.left >= 0 &&
-    	rect.bottom <= windowHeight &&
-    	rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-  	);
-	}
-
-	// Fonction pour attribuer ou supprimer la classe "unload"
-	function handleVisibility() {
-  		var elements = document.querySelectorAll('*');
-  
-  		for (var i = 0; i < elements.length; i++) {
-    			var element = elements[i];
-    
-    			if (isVisible(element)) {
-      				element.classList.remove('unload');
-    			} else {
-      				element.classList.add('unload');
-    			}
-  		}
-	}
-
-	// Appeler la fonction handleVisibility lorsque la fenêtre est chargée et redimensionnée
-	window.addEventListener('DOMContentLoaded', handleVisibility);
-	window.addEventListener('resize', handleVisibility);
-
+<script src="portfolio.js">
 </script>
 </html>
