@@ -4,11 +4,9 @@ header{
 .navbar .menu-hamburger{
 	width:6em;
 }
-.mobile-menu{
-	margin-top:8em;
-}
 .nav-links{
-	height:40em;
+	height:50em;
+	top:8em;
 }
 .navbar li a{
 	text-decoration:none;
@@ -16,16 +14,17 @@ header{
 	color:white;
 	font-family:LeagueSpartan;
 	font-size: 2em;
-	margin-left:1em;
-	margin-right:1em;
+	margin-left:1.25em;
+	margin-right:1.25em;
 	padding-top:1em;
 	padding-bottom:1em;
 	transition: 0.5s ease;
+	width:100%;
 }
 .navbar .nav-links li{
 		display:flex;
 		align-items:center;
-		width:100%;
+		width:22.5em;
 		text-align:center;
 		justify-content:center;
 }
@@ -45,19 +44,28 @@ h1{
 	font-size:2.5em;
 }
 .download{
-	background:white;
+	background:#ff5050;
 	border:0.1em solid #ff5050;
 	width:20em;
 	height:3em;
-	color:#ff5050;
+	color:white;
 	font-family:LeagueSpartan;
 	position:relative;
 	margin-top:1em;
 	border-radius:2em;
 	line-height:3em;
-	transition:0.25s;
+	transition:0.5s;
 	font-size:1.5em;
-	box-sizing: border-box;
+	cursor:pointer;
+	margin:0;
+	margin-top:3em;
+}
+.download:hover{
+	color:white;
+	background-color:#db4444;
+	border-color:#db4444;
+	width:22em;
+	transition: all 0.5s ease;
 }
 span button{
 	margin-bottom:1em;
