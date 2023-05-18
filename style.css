@@ -26,20 +26,21 @@ header{
 	color:white;
 	font-family:LeagueSpartan;
 	font-size: 1em;
-	margin-left:1em;
-	margin-right:1em;
+	margin-left:1.25em;
+	margin-right:1.25em;
 	padding-top:1em;
 	padding-bottom:1em;
 	transition: 0.5s ease;
+	width:100%;
 }
 .navbar li:hover{
 	color:black;
 	background-color:white;
-	transition: 0.5s ease;
+	transition: all 0.5s ease;
 }
 .navbar li:hover a{
 	color:black;
-	transition: 0.5s ease;
+	transition: all 0.5s ease;
 }
 .navbar .nav-links ul{
 	display:flex;
@@ -58,7 +59,7 @@ header{
 	height:100%;
 	align-items:center;
 	display:flex;
-	transition: 0.5s ease;
+	transition: all 0.5s ease;
 }
 .navbar .menu-hamburger{
 	display:none;
@@ -67,23 +68,43 @@ header{
 @media screen and (max-width:1000px){
 	.navbar .menu-hamburger{
 		display: block;
-		width:3em;
+		width:3.5em;
 		position:absolute;
 		top:50%;
 		left:50%;
 		transform:translate(-50%,-50%);
+		cursor:pointer;
 	}
-	.navbar .menu-hamburger:hover{
-		filter:brightness(75%);
+	.open{
+		display:block;
+		width:100%;
+		height:100%;
+	}
+	.close{
+		display:none;
+		width:100%;
+		height:100%;
+	}
+	.toggle .open{
+		display:none;
+		width:100%;
+		height:100%;
+	}
+	.toggle .close{
+		display:block;
+		width:100%;
+		height:100%;
 	}
 	.nav-links{
 		position:absolute;
 		background-color:rgba(45,45,45,0.5);
 		backdrop-filter:blur(0.25em);
-		height:25em;
 		width:100%;
-		margin-top:-100%;
+		height:25em;
 		z-index:-1;
+		top:4em;
+		left:-150%;
+		transition:all 0.25s ease;
 	}
 	.navbar .nav-links ul{
 		display:flex;
@@ -100,7 +121,9 @@ header{
 		justify-content:center;
 	}
 	.mobile-menu{
-		margin-top:4em;
+		top:4em;
+		transition:all 0.25s ease;
+		left:0;
 	}
 }
 footer{
@@ -208,6 +231,7 @@ section{
 	font-family:LeagueSpartan;
 	font-size:1em;
 	text-align:center;
+	margin:0;
 	margin-top:4em;
 	position:relative;
 	width:80%;
@@ -399,23 +423,28 @@ span button:hover{
 	background-color:#ffd759;
 }
 .download{
-	background:white;
+	background:#ff5050;
 	border:0.1em solid #ff5050;
 	width:17.5em;
 	height:2.5em;
-	color:#ff5050;
+	color:white;
 	font-family:LeagueSpartan;
 	position:relative;
 	margin-top:1em;
 	border-radius:2em;
 	line-height:2.5em;
-	transition:0.25s;
+	transition:0.5s;
 	font-size:1em;
+	cursor:pointer;
+	margin:0;
+	margin-top:3em;
 }
 .download:hover{
 	color:white;
-	background-color:#ff5050;
-	transition:0.5s;
+	background-color:#db4444;
+	border-color:#db4444;
+	width:19.5em;
+	transition: all 0.5s ease;
 }
 .download-container{
 	display:flex;
@@ -610,6 +639,7 @@ html{
 	margin-right:1em;
 	position:relative;
 	overflow:hidden;
+	cursor:pointer;
 }
 .block{
 	display:flex;
@@ -641,7 +671,7 @@ a{
 	box-sizing:border-box;
 	background-color:rgba(217,217,217,0);
 }
-a:hover .hover_animation{
+.block_portfolio:hover .hover_animation{
 	width:100%;
 	height:100%;
 	position:absolute;
@@ -693,4 +723,66 @@ span h1{
 		align-items:center;
 		width:100%;
 	}
+}
+.page_thales{
+	display:none;
+}
+.page_web{
+	display:none;
+}
+.page_réseau{
+	display:none;
+}
+.page_câbles{
+	display:none;
+}
+.on{
+	width:100%;
+	height:100%;
+	background-color:rgba(0,0,0,0.5);
+	backdrop-filter:blur(2px);
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:10;
+	display:block;
+}
+.return{
+	width:5em;
+	position:fixed;
+	top:-2.5%;
+	cursor:pointer;
+	z-index:1;
+	transform:translateY(-100%);
+	width:12.5em;
+	height:2.5em;
+	font-size:1em;
+	font-family:LeagueSpartan;
+	padding:0;
+	border-radius:0.5em;
+	border:none;
+	color:black;
+	background-color: #ffc718;
+}
+.return:hover{
+	background-color:#ffd759;
+}
+.page{
+	width:80%;
+	height:80%;
+	background-color:white;
+	border-radius:0.5em;
+	left:50%;
+	top:50%;
+	transform:translate(-50%,-50%);
+	position:fixed;
+}
+.page_contain{
+	width:100%;
+	height:90%;
+	position:fixed;
+	overflow-y:scroll;
+	top:50%;
+	position:absolute;
+	transform:translateY(-50%);
 }
