@@ -1,0 +1,322 @@
+.CatalogueFilms
+{
+	position: fixed;
+	width: 5%;
+	top: 45%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+body
+{
+	margin: 0;
+}
+.Entete
+{
+	position: fixed;
+	width: 100%;
+	height: 5em;
+	left: 0;
+	top: 0;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.BarreRecherche
+{
+	position: absolute; 
+	background-color: white;
+	width: 25em;
+	height: 3.125em;
+	border-radius: 1.875em;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	right: 0;
+	
+}
+.Loupe
+{
+	position: absolute;
+	height:2.5em;
+	width: 2.5em;
+	z-index:2 ;
+	border-radius: 1.875em;
+	right: 0.25em;
+}
+.search_barre
+{
+	width: 16em;
+	height: 1.25em;
+	background-color: white;
+	left: 0.75em;
+	border: 0em;
+	position: absolute;
+	outline: none;
+	font-size: 1.25em;
+	font-family: Baskerville, Baskerville Old Face, Garamond, Times New Roman, serif;
+	z-index:2;
+}
+.catalogue
+{
+	position: relative;
+	background-color: white;
+	width:3.125em;
+	height:0.625em;
+	border-radius:0.313em;
+	margin: 0.5em;
+	left:-1.15em;
+}
+
+.catalogue1
+{
+	position: relative;
+	background-color: transparent;
+	width:3.125em;
+	height:0.625em;
+	border-radius:0.313em;
+	margin: 0.5em;
+}
+
+
+.catalogue:hover
+{
+	-webkit-transform: translate(10%);
+}
+
+
+.Home
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	height: 3.438em; 
+	width: 3.438em;
+	transition: all 0.3s ease;
+}
+
+.Home:hover
+{
+	border: 0.1em solid white;
+	border-radius: 0.5em;
+}
+
+
+.catalogue2
+{
+	background-color: transparent;
+	position: absolute;
+	height: 4em;
+	width: 4em;
+	top:1.6em;
+	left: -1em;
+	transform: translate(0, -50%);
+	z-index: 1;
+	border-radius: 0.25em;
+}
+.choix_catalogue:target
+{
+	z-index: 3;
+	height: 35em;
+	width: 16.5em;
+	background-color: #1f202d;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border: solid 0.2em #1f202d;
+	display: block;
+}
+.choix_catalogue
+{
+	z-index: 3;
+	height: 35em;
+	width: 17.5em;
+	background-color: #1f202d;
+	position: absolute;
+	top: 0;
+	left: -30em;
+	border: solid 0.2em white;
+	display: block;
+	transition: all 0.3s ease;
+}
+.cross
+{
+  width: 2.5em;
+  height: 2.5em;
+  position: absolute;
+  top: 1.5em;
+  left: 18em;
+}
+.croix1
+{
+	width: 2.5em;
+	height: 0.2em;
+	transform: rotate(45deg);
+	background-color: white;
+	position: absolute;
+}
+.croix2
+{
+	width: 2.5em;
+	height: 0.2em;
+	transform: rotate(-45deg);
+	background-color: white;
+	position: absolute;
+}
+.sol
+{
+	height: 6.25em;
+	width: 4.5em;
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+	right: 0.5em;
+	z-index: 4;
+}
+.supérieur
+{
+	font-family: Baskerville, Baskerville Old Face, Garamond, Times New Roman, serif;
+	color: white;
+	font-size: 1.25em;
+	z-index: 2;
+	position: relative;
+	text-align: center;
+	transform: translate(0, -75%);
+	font-weight: bold;
+}
+.carré1
+{
+	width: 90%;
+	position: relative;
+	height: 2em;
+	border-top: 0.1em solid darkgray;
+	border-bottom: 0.1em solid darkgray;
+	margin: 0.75em;
+
+}
+
+.titre_choix
+{
+	font-family: Baskerville, Baskerville Old Face, Garamond, Times New Roman, serif;
+	color: white;
+	font-size: 1.25em;
+	position: relative;
+	z-index: 2;
+	margin-left: 1em;
+	transition: 0.3s;
+	text-align: center;
+}
+.titre_choix:hover
+{
+	color: darkgray
+}
+
+.transparent
+{
+	color: transparent;
+}
+
+.sous_catalogue1
+{
+	position: relative;
+	display: flex;
+	width: 100;
+	text-align: center;
+	justify-content: center;
+	top: 5em;
+}
+h1
+{
+	font-family: Baskerville, Baskerville Old Face, Garamond, 	Times New Roman, serif;
+	font-size: 2em;
+	color: white ;
+	position: relative;
+	text-align: center;
+}
+.Retour
+{
+	position:fixed;
+	top: 22.75em;
+	left: -1.7em;
+	height: 3.188em; 
+	width: 3.188em;
+	transition: all 0.3s ease;
+}
+
+.Retour:hover{
+
+    -webkit-transform: scale(1.);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+
+}
+.Réseaux
+{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+
+}
+.crédits
+{
+	left: 50%;
+	top: 10em;
+	transform: translate(-50%);
+	background-color: #2b2d3e;
+	width: 80em;
+	position: absolute;
+	height: 70em;
+	overflow: hidden;
+}
+.logo_créateur
+{
+	position: relative;
+	width: 20em;
+	height: 10em;
+	border-radius: 0.5em;
+	margin: 2em;
+}
+h2
+{
+	font-family: Retina,Arial,Helvetica,sans-serif;
+	color: white;
+	font-weight: 700;
+	font-size: 2em;
+	position: relative;
+	padding-bottom: 0.5em;
+	border-bottom: 0.05em solid white;
+}
+.sous_créateur
+{
+	font-family: Retina,Arial,Helvetica,sans-serif;
+	color: #e7e7ec;
+	font-weight: 700;
+	font-size: 1.5em;
+	position: relative;
+	bottom: 0;
+	margin-top: 1em;
+}
+.texte_créateur
+{
+	position: relative;
+	display: block;
+	margin-left: 1em;
+	height: 15em;
+	width: 30em;
+	top: 50%;
+	transform: translate(0, -50%);
+	text-align: left;
+}
+.les_crédits
+{
+	position: relative;
+	display: flex;
+	width: 60em;
+	height: 15em;
+	left: 50%;
+	transform: translate(-50%);
+	justify-content: center;
+}
