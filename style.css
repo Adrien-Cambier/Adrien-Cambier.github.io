@@ -656,7 +656,6 @@ html{
 	width:100%;
 	margin-bottom:1em;
 	object-fit:cover;
-	object-position:center;
 }
 a{
 	text-decoration:none;
@@ -1035,6 +1034,9 @@ iframe{
 		height:25%;
 	}
 }
-.content-piano img{
+.left_pic{
 	object-position:left;
+}
+.center_pic{
+	object-position:center;
 }
