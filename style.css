@@ -3,6 +3,7 @@ body{
 	background-color:#f6f6f6;
 	margin-top:4em;
 	overflow-x:hidden;
+	overflow-y:scroll;
 }
 header{
 	position: fixed;
@@ -430,14 +431,14 @@ span button:hover{
 	color:white;
 	font-family:LeagueSpartan;
 	position:relative;
-	margin-top:1em;
 	border-radius:2em;
 	line-height:2.5em;
 	transition:0.5s;
 	font-size:1em;
 	cursor:pointer;
 	margin:0;
-	margin-top:3em;
+	margin-top:2em;
+	text-align:center;
 }
 .download:hover{
 	color:white;
@@ -736,6 +737,12 @@ span h1{
 .page_câbles{
 	display:none;
 }
+.page_passions1{
+	display:none;
+}
+.page_passions2{
+	display:none;
+}
 .on{
 	width:100%;
 	height:100%;
@@ -749,40 +756,298 @@ span h1{
 }
 .return{
 	width:5em;
-	position:fixed;
-	top:-2.5%;
+	position:relative;
+	top:0;
 	cursor:pointer;
 	z-index:1;
-	transform:translateY(-100%);
 	width:12.5em;
 	height:2.5em;
 	font-size:1em;
 	font-family:LeagueSpartan;
 	padding:0;
-	border-radius:0.5em;
 	border:none;
-	color:black;
-	background-color: #ffc718;
+	color:white;
+	background-color:transparent;
+	transition:all 0.25s ease;
 }
 .return:hover{
 	background-color:#ffd759;
+	color:black;
+	transition:all 0.5s ease;
 }
 .page{
-	width:80%;
-	height:80%;
+	width:85%;
+	height:85%;
 	background-color:white;
-	border-radius:0.5em;
 	left:50%;
 	top:50%;
 	transform:translate(-50%,-50%);
-	position:fixed;
+	position:absolute;
+	background-color:#2b2b2b;
+	overflow:hidden;
 }
 .page_contain{
 	width:100%;
-	height:90%;
+	height:calc(100% - 2.5em);
 	position:fixed;
-	overflow-y:scroll;
-	top:50%;
+	top:2.5em;
 	position:absolute;
-	transform:translateY(-50%);
+	background-color:white;
+	display:flex;
+	justify-content:start;
+	align-items:start;
+	box-sizing:border-box;
+}
+.project_text h1{
+	margin:0;
+	margin-top:1em;
+	text-align:left;
+}
+.project_text .line{
+	margin:0;
+	margin-top:0.5em;
+	min-height:0.5em;
+	background-color:black;
+}
+.project_text .logo-title{
+	margin:0;
+	margin-top:1em;
+	margin-bottom:0.5em;
+}
+.project_text .download{
+	width:50%;
+}
+.project_text .download:hover{
+	width:55%;
+}
+.project_img{
+	width:50%;
+	height:100%;
+	object-fit:cover;
+	object-position:center;
+}
+.project_text{
+	width:50%;
+	height:100%;
+	display:flex;
+	flex-direction:column;
+	align-items:start;
+	padding:1em;
+	overflow-y:scroll;
+	box-sizing:border-box;
+}
+.project{
+	margin-top:2em;
+	display:flex;
+	flex-direction:column;
+}
+@media screen and (max-width:80em){
+	.project_text .download{
+		width:100%;
+	}
+	.project_text .download:hover{
+		width:100%
+	}
+}
+.page-passions{
+	width:85%;
+	height:85%;
+	background-color:white;
+	left:50%;
+	top:50%;
+	transform:translate(-50%,-50%);
+	position:absolute;
+	background-color:black;
+	overflow:hidden;
+	border-radius:2em;
+}
+.page_contain-passions{
+	width:100%;
+	height:calc(100% - 5em);
+	position:fixed;
+	top:5em;
+	position:absolute;
+	background-color:#fff7f7;
+	display:flex;
+	flex-direction:column;
+	justify-content:start;
+	align-items:start;
+	box-sizing:border-box;
+	border-radius:2em;
+	padding:1em;
+	overflow:hidden;
+}
+.page-passions .return{
+	position:relative;
+	margin:0;
+	margin-left:1em;
+	border-radius:2em;
+	background-color:#ffe1e1;
+	color:black;
+	overflow:hidden;
+}
+.page-passions .return:hover{
+	width:15em;
+}
+.contain_return{
+	width:100%;
+	height:5em;
+	position:absolute;
+	display:flex;
+	align-items:center;
+}
+.page-passions .opposite{
+	background-color:#483737;
+	color:#ffe1e1;
+}
+.page-passions .opposite:hover{
+	background-color:#ffe1e1;
+	color:black;
+}
+.returned{
+	width:5em;
+	top:0;
+	cursor:pointer;
+	z-index:1;
+	width:12.5em;
+	height:2.5em;
+	font-size:1em;
+	font-family:LeagueSpartan;
+	padding:0;
+	border:none;
+	transition:all 0.25s ease;
+	position:relative;
+	margin:0;
+	margin-left:1em;
+	border-radius:2em;
+	background-color:#ffe1e1;
+	overflow:hidden;
+}
+.contain-passions{
+	background-color:white;
+	display:flex;
+	align-items:start;
+	left:50%;
+	margin-top:0.25em;
+	margin-bottom:0.25em;
+	position:relative;
+	transform:translateX(-50%);
+	padding:1em;
+	width:50em;
+	overflow-y:scroll;
+	height:100%;
+	flex-direction:column;
+	box-sizing:border-box;
+}
+.contain-top{
+	border-top-right-radius:2em;
+	border-top-left-radius:2em;
+	background-color:white;
+	display:flex;
+	left:50%;
+	position:relative;
+	transform:translateX(-50%);
+	padding:1em;
+	width:50em;
+	height:5em;
+	display:flex;
+	align-items:center;
+	box-sizing:border-box;
+}
+.contain-top h1{
+	margin:0;
+	margin-left:0.5em;
+	font-size:1.5em;
+	margin-top:1em;
+}
+.contain-passions h1{
+	margin:0;
+	font-size:1.5em;
+	margin-top:1em;
+	text-align:left;
+}
+.contain-top img{
+	width:2.5em;
+}
+.contain-passions .line{
+	margin:0;
+	margin-top:0.5em;
+	min-height:0.5em;
+	background-color:black;
+}
+iframe{
+	width:50%;
+	height:15em;
+	margin-top:1em;
+	margin-bottom:1em;
+}
+@media screen and (max-width:62.5em){
+	.contain-passions{
+		width:100%;
+	}
+	.contain-top{
+		width:100%;
+	}
+	iframe{
+		width:100%;
+	}
+}
+.tab_contain{
+	width:100%;
+	background-color:black;
+	padding-left:0.5em;
+	padding-right:0.5em;
+	padding-top:0.5em;
+	box-sizing:border-box;
+	border-radius:1.5em;
+}
+.tab{
+	width:100%;
+	height:2.5em;
+	border-radius:2em;
+	background-color:#483737;
+	position:relative;
+	box-sizing:border-box;
+	z-index:1;
+	margin:0;
+	top:0;
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+	margin-bottom:0.5em;
+}
+h4{
+	margin:0;
+	margin-left:1em;
+	font-family:LeagueSpartan;
+	font-size:1em;
+	color:white;
+	font-weight: lighter;
+	width:30em;
+}
+.tab_access{
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	height:100%;
+	width:15em;
+	border-radius:2em;
+	background-color:#ffe1e1;
+	transition:0.25s ease-in-out;
+}
+.tab_access p{
+	margin:0;
+	color:black;
+}
+.tab_access:hover{
+	width:17.5em;
+	transition:0.25s ease-in-out;
+}
+@media screen and (max-width:60em){
+	.tab{
+		height:5em;
+	}
+	.tab_access{
+		border-radius:1em;
+	}
 }
