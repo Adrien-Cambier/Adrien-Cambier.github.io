@@ -741,6 +741,9 @@ span h1{
 .page_passions2{
 	display:none;
 }
+.page_web_picture{
+	display:none;
+}
 .on{
 	width:100%;
 	height:100%;
@@ -769,6 +772,27 @@ span h1{
 	transition:all 0.25s ease;
 }
 .return:hover{
+	background-color:#ffd759;
+	color:black;
+	transition:all 0.5s ease;
+}
+.précédent{
+	width:5em;
+	position:relative;
+	top:0;
+	cursor:pointer;
+	z-index:1;
+	width:12.5em;
+	height:2.5em;
+	font-size:1em;
+	font-family:LeagueSpartan;
+	padding:0;
+	border:none;
+	color:white;
+	background-color:transparent;
+	transition:all 0.25s ease;
+}
+.précédent:hover{
 	background-color:#ffd759;
 	color:black;
 	transition:all 0.5s ease;
@@ -1019,7 +1043,7 @@ iframe{
 	top:0;
 	transition:0.25s ease-in-out;
 	backdrop-filter:blur(2px);
-		background-color:rgba(217,217,217,0.5);
+	background-color:rgba(217,217,217,0.5);
 }
 @media screen and (max-width:62.5em){
 	.page_contain{
@@ -1039,4 +1063,9 @@ iframe{
 }
 .center_pic{
 	object-position:center;
+}
+.galerie{
+	width:100%;
+	box-shadow: 0 0 10px rgba(1,1,1,.2);
+	margin-bottom:1em;
 }
