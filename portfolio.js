@@ -4,6 +4,8 @@ const réseau = document.querySelector("#réseau");
 const câbles = document.querySelector("#câbles");
 const passions = document.querySelector("#passions");
 const cross = document.querySelectorAll(".return");
+const web_picture = document.querySelector("#web_picture");
+const précédent = document.querySelector('.précédent');
 
 const piano = document.querySelectorAll('.piano');
 const jeu = document.querySelectorAll('.jeu');
@@ -13,6 +15,10 @@ web.addEventListener('click',() => toggleOn(".page_web"));
 réseau.addEventListener('click',() => toggleOn(".page_réseau"));
 câbles.addEventListener('click',() => toggleOn(".page_câbles"));
 passions.addEventListener('click',() => toggleOn(".page_passions1"));
+web_picture.addEventListener('click',() => toggleOn(".page_web_picture"))
+web_picture.addEventListener('click',() => toggleOff(".page_web"))
+précédent.addEventListener('click',() => toggleOff(".page_web_picture"))
+précédent.addEventListener('click',() => toggleOn(".page_web"))
 
 jeu.forEach(element => {
 	element.addEventListener('click', () =>toggleOff(".page_passions1"));
