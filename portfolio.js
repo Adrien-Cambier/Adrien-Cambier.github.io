@@ -34,14 +34,14 @@ const précédent = document.querySelector('.précédent');
 const piano = document.querySelectorAll('.piano');
 const jeu = document.querySelectorAll('.jeu');
 
+web_picture.addEventListener('click',() => toggleOff(".page_web"))
+précédent.addEventListener('click',() => toggleOff(".page_web_picture"))
+web_picture.addEventListener('click',() => toggleOn(".page_web_picture"))
+passions.addEventListener('click',() => toggleOn(".page_passions1"));
 thales.addEventListener('click',() => toggleOn(".page_thales"));
 web.addEventListener('click',() => toggleOn(".page_web"));
 réseau.addEventListener('click',() => toggleOn(".page_réseau"));
 câbles.addEventListener('click',() => toggleOn(".page_câbles"));
-passions.addEventListener('click',() => toggleOn(".page_passions1"));
-web_picture.addEventListener('click',() => toggleOn(".page_web_picture"))
-web_picture.addEventListener('click',() => toggleOff(".page_web"))
-précédent.addEventListener('click',() => toggleOff(".page_web_picture"))
 précédent.addEventListener('click',() => toggleOn(".page_web"))
 
 jeu.forEach(element => {
@@ -74,7 +74,6 @@ function toggleOff(selector) {
 	elements.classList.remove('on');
 	document.body.style.overflowY = 'scroll';
 };
-
 
 const menuHamburger = document.querySelector(".menu-hamburger")
 const navLinks = document.querySelector(".nav-links")
