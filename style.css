@@ -141,7 +141,6 @@ footer{
 	justify-content:center;
 	align-items:center;
 	flex-direction:column;
-	padding-bottom:1em;
 }
 footer .line{
 	background-color:white;
@@ -1079,34 +1078,4 @@ iframe{
 	width:100%;
 	box-shadow: 0 0 10px rgba(1,1,1,.2);
 	margin-bottom:1em;
-}
-footer form{
-	margin-top:1em;
-}
-footer button{
-	background-color:white;
-	width:12.5em;
-	height:2em;
-	font-size:1em;
-	font-family:LeagueSpartan;
-	cursor:pointer;
-	color:#2b2b2b;
-	border:0.15em solid white;
-	margin-right:1em;
-	margin-left:1em;
-	transition:0.25s ease-in-out;
-	line-height:2em;
-}
-footer button:hover{
-	transition:0.25s ease-in-out;
-	background-color:#2b2b2b;
-	color:white;
-}
-.flex{
-	display:flex;
-}
-@media screen and (max-width:45em){
-	.flex{
-		flex-direction:column;
-	}
 }
