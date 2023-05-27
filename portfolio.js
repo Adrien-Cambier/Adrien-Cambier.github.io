@@ -1,3 +1,27 @@
+// Sélectionnez l'élément que vous voulez faire apparaître/disparaître
+var header = document.querySelector('header');
+
+// Définissez une variable pour stocker la position précédente du scroll
+var previousScrollPosition = window.pageYOffset;
+
+// Écoutez l'événement de défilement de la fenêtre
+window.onscroll = function() {
+  // Obtenez la position actuelle du scroll
+  var currentScrollPosition = window.pageYOffset;
+
+  // Vérifiez si l'utilisateur fait défiler vers le bas
+  if (currentScrollPosition > previousScrollPosition) {
+    // Affichez l'élément
+    header.classList.add('header_off');
+  } else {
+    // Masquez l'élément
+    header.classList.remove('header_off');
+  }
+
+  // Mettez à jour la position précédente du scroll
+  previousScrollPosition = currentScrollPosition;
+}
+
 const thales = document.querySelector("#thales");
 const web = document.querySelector("#web");
 const réseau = document.querySelector("#réseau");
@@ -99,37 +123,4 @@ window.addEventListener('load', function() {
   	}
 });
 
-// Lorsque la page est chargée ou rafraîchie
-window.addEventListener('beforeunload', function() {
-window.scrollTo(0, 0); // Défilement vers le haut de la page
-})
 
-// Fonction pour vérifier si un élément est visible dans la fenêtre
-function isVisible(element) {
-  	var rect = element.getBoundingClientRect();
-  	var windowHeight = window.innerHeight || document.documentElement.clientHeight;
-  
-	return (
-		rect.top >= 0 &&
-    		rect.left >= 0 &&
-    		rect.bottom <= windowHeight &&
-    		rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-	);
-}
-
-// Fonction pour attribuer ou supprimer la classe "unload"
-function handleVisibility() {
-  	var elements = document.querySelectorAll('*');
-  
-  	for (var i = 0; i < elements.length; i++) {
-    		var element = elements[i];
-    
-    		if (isVisible(element)) {
-      			element.classList.remove('unload');
-    		} else {
-      			element.classList.add('unload');
-    		}
-  	}
-}
-
-// Appeler la fonction handleVisibility lorsque la fenêtre est chargée et redimensionnée
