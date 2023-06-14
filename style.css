@@ -433,6 +433,7 @@ span button{
 span button:hover{
 	background-color:#ffd759;
 }
+
 .download{
 	background:#ff5050;
 	border:0.1em solid #ff5050;
@@ -447,7 +448,7 @@ span button:hover{
 	font-size:1em;
 	cursor:pointer;
 	margin:0;
-	margin-top:2em;
+	margin-top:1.5em;
 	text-align:center;
 }
 .download:hover{
@@ -460,6 +461,16 @@ span button:hover{
 .download-container{
 	display:flex;
 	justify-content:center;
+}
+.github{
+	background-color:white;
+	border-color:#575757;
+	color:#575757;
+}
+.github:hover{
+	border-color:black;
+	color:black;
+	background-color:white;
 }
 .contact-all{
 	display:flex;
@@ -752,6 +763,12 @@ span h1{
 	display:none;
 }
 .page_web_picture{
+	display:none;
+}
+.page_réseau_picture{
+	display:none;
+}
+.page_thales_picture{
 	display:none;
 }
 .on{
