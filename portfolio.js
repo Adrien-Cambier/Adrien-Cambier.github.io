@@ -1,3 +1,14 @@
+document.querySelector("#github_music").addEventListener("click", ()=> {
+  window.location.href = "https://github.com/Adrien-Cambier/Music-Website"; // Remplacez "votre_lien" par le lien que vous souhaitez rediriger
+});
+
+document.querySelector("#github_thales").addEventListener("click", ()=> {
+  window.location.href = "https://github.com/Adrien-Cambier/Thales-Website"; // Remplacez "votre_lien" par le lien que vous souhaitez rediriger
+});
+
+document.querySelector("#rapport_sae21").addEventListener("click", ()=> {
+  window.location.href = "https://adrien-cambier.github.io/Rapport SAE 21.pdf"; // Remplacez "votre_lien" par le lien que vous souhaitez rediriger
+});
 // Sélectionnez l'élément que vous voulez faire apparaître/disparaître
 var header = document.querySelector('header');
 
@@ -29,20 +40,33 @@ const câbles = document.querySelector("#câbles");
 const passions = document.querySelector("#passions");
 const cross = document.querySelectorAll(".return");
 const web_picture = document.querySelector("#web_picture");
-const précédent = document.querySelector('.précédent');
+const réseau_picture = document.querySelector("#réseau_picture");
+const thales_picture = document.querySelector("#thales_picture");
+const précédent_web = document.querySelector('#pre_web');
+const précédent_réseau = document.querySelector('#pre_rés');
+const précédent_thales = document.querySelector('#pre_tha');
+
 
 const piano = document.querySelectorAll('.piano');
 const jeu = document.querySelectorAll('.jeu');
 
 web_picture.addEventListener('click',() => toggleOff(".page_web"))
-précédent.addEventListener('click',() => toggleOff(".page_web_picture"))
+thales_picture.addEventListener('click',() => toggleOff(".page_thales"))
+précédent_web.addEventListener('click', () =>toggleOff(".page_web_picture"));
+précédent_réseau.addEventListener('click', () =>toggleOff(".page_réseau_picture"));
+précédent_thales.addEventListener('click', () =>toggleOff(".page_thales_picture"));
+réseau_picture.addEventListener('click',() => toggleOff(".page_réseau"))
 web_picture.addEventListener('click',() => toggleOn(".page_web_picture"))
 passions.addEventListener('click',() => toggleOn(".page_passions1"));
 thales.addEventListener('click',() => toggleOn(".page_thales"));
 web.addEventListener('click',() => toggleOn(".page_web"));
 réseau.addEventListener('click',() => toggleOn(".page_réseau"));
 câbles.addEventListener('click',() => toggleOn(".page_câbles"));
-précédent.addEventListener('click',() => toggleOn(".page_web"))
+réseau_picture.addEventListener('click',() => toggleOn(".page_réseau_picture"))
+précédent_web.addEventListener('click', () =>toggleOn(".page_web"));
+précédent_réseau.addEventListener('click', () =>toggleOn(".page_réseau"));
+précédent_thales.addEventListener('click', () =>toggleOn(".page_thales"));
+thales_picture.addEventListener('click',() => toggleOn(".page_thales_picture"))
 
 jeu.forEach(element => {
 	element.addEventListener('click', () =>toggleOff(".page_passions1"));
@@ -123,5 +147,3 @@ window.addEventListener('load', function() {
     			textareas[i].value = ''; // Réinitialise la valeur du champ à une chaîne vide
   	}
 });
-
-
