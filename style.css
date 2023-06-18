@@ -238,6 +238,9 @@ section{
 	height:0.15em;
 	background-color:#dadada;
 }
+hr{
+	width:30em;
+}
 .text{
 	font-family:LeagueSpartan;
 	font-size:1em;
@@ -299,8 +302,11 @@ p{
 .contain{
 	display:flex;
 	position:relative;
-	margin-top:4em;
+	margin-top:3em;
 	justify-content:center;
+}
+.contain hr{
+	display:none;
 }
 .contain .entertainement{
 	align-items:left;
@@ -309,6 +315,7 @@ p{
 	position:relative;
 	margin-left:1em;
 	margin-right:1em;
+	margin-top:1em;
 	width:25em;
 	top:0;
 	background-color:#f6f6f6;
@@ -333,15 +340,24 @@ p{
 		margin-left:auto;
 		margin-right:auto;
 		position:relative;
-		margin-bottom:2em;
-		margin-top:0;
+		margin-top:1em;
+		margin-bottom:1em;
 		width:50em;
+		flex-direction:row;
+	}
+	.entertainement span{
+		position:relative;
+		width:30em;
+		margin-left:1em;
 	}
 	.entertainement img{
-		width:100%;
-		height:25em;
+		width:40%;
+		height:10em;
 		border-radius:1em;
 		margin-bottom:1.5em;
+	}
+	.contain hr{
+		display:block;
 	}
 }
 @media screen and (max-width:75em){
@@ -360,7 +376,16 @@ p{
 		margin-left:auto;
 		margin-right:auto;
 		position:relative;
-		margin-bottom:2em;
+		margin-bottom:1em;
+		margin-top:1em;
+		flex-direction:column;
+	}
+	.entertainement span{
+		width:unset;
+		margin-left:unset;
+	}
+	.contain hr{
+		display:none;
 	}
 }
 .parcours img{
@@ -371,7 +396,7 @@ p{
 	object-position:center;
 }
 .container-parcours{
-	margin-top:4em;
+	margin-top:3em;
 	position:relative;
 	display:flex;
 	align-items:center;
@@ -392,17 +417,14 @@ p{
 	margin-left:1em;
 	width:30em;
 }
-hr{
-	width:30em;
-}
 @media screen and (max-width:75em){
 	.parcours{
 		width:85%;
 		display:flex;
 		flex-direction:column;
 		align-items:left;
-		margin-top:0;
-		margin-bottom:2em;
+		margin-top:1em;
+		margin-bottom:1em;
 	}
 	hr{
 		display:none;
@@ -655,6 +677,7 @@ html{
 }
 .block_portfolio{
 	width:20em;
+	height:26.5em;
 	box-shadow: 0 0 10px rgba(1,1,1,.2);
 	box-sizing:border-box;
 	margin-left:1em;
