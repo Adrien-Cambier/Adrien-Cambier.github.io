@@ -239,7 +239,12 @@ section{
 	background-color:#dadada;
 }
 hr{
-	width:30em;
+	width:5em;
+	height:0.5em;
+	background-color:black;
+	border-width:0 0 0 1.5em;
+	border-color: #ffde59;
+	border-style:solid;
 }
 .text{
 	font-family:LeagueSpartan;
