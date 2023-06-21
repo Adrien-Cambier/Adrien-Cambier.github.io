@@ -977,7 +977,8 @@ span h1{
 	color:white;
 }
 .page-passions .opposite:hover{
-	background-color:#f6f6f6;
+	background-color:#ffd759;
+	border-color:#ffd759;
 	color:black;
 }
 .returned{
