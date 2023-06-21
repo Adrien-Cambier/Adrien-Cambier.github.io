@@ -928,7 +928,7 @@ span h1{
 	top:50%;
 	transform:translate(-50%,-50%);
 	position:absolute;
-	background-color:black;
+	background-color:#2b2b2b;
 	overflow:hidden;
 	border-radius:2em;
 }
@@ -938,7 +938,7 @@ span h1{
 	position:fixed;
 	top:5em;
 	position:absolute;
-	background-color:#fff7f7;
+	background-color:#f6f6f6;
 	display:flex;
 	flex-direction:column;
 	justify-content:start;
@@ -953,7 +953,8 @@ span h1{
 	margin:0;
 	margin-left:1em;
 	border-radius:2em;
-	background-color:#ffe1e1;
+	background-color:#f6f6f6;
+	border:#f6f6f6 solid 0.1em;
 	color:black;
 	overflow:hidden;
 }
@@ -968,11 +969,13 @@ span h1{
 	align-items:center;
 }
 .page-passions .opposite{
-	background-color:#483737;
-	color:#ffe1e1;
+	background-color:transparent;
+	border:white solid 0.1em;
+	border-radius:inherit;
+	color:white;
 }
 .page-passions .opposite:hover{
-	background-color:#ffe1e1;
+	background-color:#f6f6f6;
 	color:black;
 }
 .returned{
@@ -1000,7 +1003,6 @@ span h1{
 	align-items:start;
 	left:50%;
 	margin-top:0.25em;
-	margin-bottom:0.25em;
 	position:relative;
 	transform:translateX(-50%);
 	padding:1em;
@@ -1009,6 +1011,8 @@ span h1{
 	height:100%;
 	flex-direction:column;
 	box-sizing:border-box;
+	border-bottom-left-radius:2em;
+	border-bottom-right-radius:2em;
 }
 .contain-top{
 	border-top-right-radius:2em;
