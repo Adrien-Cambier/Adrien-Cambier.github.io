@@ -14,21 +14,6 @@ scrollLinks.forEach((link) => {
 // Ajouter des gestionnaires d'événements pour le menu hamburger
 menuHamburger.addEventListener('click', toggleMobileMenu);
 
-// Gestionnaire d'événement pour masquer/afficher le header lors du défilement
-let previousScrollPosition = window.pageYOffset;
-
-window.addEventListener('scroll', () => {
-  const currentScrollPosition = window.pageYOffset;
-
-  if (currentScrollPosition > previousScrollPosition) {
-    header.classList.add('header_off');
-  } else {
-    header.classList.remove('header_off');
-  }
-
-  previousScrollPosition = currentScrollPosition;
-});
-
 // Gestionnaires d'événements pour les éléments à activer/désactiver
 const thales = document.querySelector('#thales');
 const web = document.querySelector('#web');
@@ -112,7 +97,7 @@ function scrollToSection(event) {
   event.preventDefault();
 
   const target = document.querySelector(event.target.hash);
-  const position = target.offsetTop;
+  const position = target.getBoundingClientRect().top + window.pageYOffset;
 
   window.scrollTo({
     top: position,
