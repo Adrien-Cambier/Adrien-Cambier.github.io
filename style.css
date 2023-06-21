@@ -951,7 +951,6 @@ span h1{
 .page-passions .return{
 	position:relative;
 	margin:0;
-	margin-left:1em;
 	border-radius:2em;
 	background-color:#f6f6f6;
 	border:#f6f6f6 solid 0.1em;
@@ -967,6 +966,9 @@ span h1{
 	position:absolute;
 	display:flex;
 	align-items:center;
+	padding-left:1em;
+	padding-right:1em;
+	box-sizing:border-box;
 }
 .page-passions .opposite{
 	background-color:transparent;
