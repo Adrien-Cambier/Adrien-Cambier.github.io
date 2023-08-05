@@ -5,6 +5,7 @@ body{
 	overflow-x:hidden;
 	overflow-y:scroll;
 }
+
 header{
 	position: fixed;
 	background-color:#2b2b2b;
@@ -1033,6 +1034,11 @@ span h1{
 	align-items:center;
 	box-sizing:border-box;
 }
+.block_bis-piano{
+	width:100%;
+	display:flex;
+	position:relative;
+}
 .contain-top h1{
 	margin:0;
 	margin-left:0.5rem;
@@ -1070,11 +1076,12 @@ iframe{
 	iframe{
 		width:100%;
 	}
-}
-.block_bis-piano{
-	width:100%;
-	display:flex;
-	position:relative;
+	.none{
+		display:none;
+	}
+	.block-bis_piano{
+		flex-direction:column;
+	}
 }
 .content-piano{
 	box-shadow: 0 0 10px rgba(1,1,1,.2);
