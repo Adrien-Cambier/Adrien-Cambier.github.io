@@ -68,7 +68,7 @@ header{
 	display:none;
 	z-index:1;
 }
-@media screen and (max-width:1000px){
+@media screen and (max-width:65rem){
 	.navbar .menu-hamburger{
 		display: block;
 		width:3.5rem;
