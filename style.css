@@ -1123,6 +1123,9 @@ iframe{
 		width:100%;
 		height:25%;
 	}
+	.content-piano{
+		width:100%;
+	}
 }
 .left_pic{
 	object-position:left;
