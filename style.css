@@ -107,6 +107,7 @@ header{
 		z-index:-1;
 		left:-150%;
 		transition:all 0.25s ease;
+		top:3.5rem;
 	}
 	.navbar .nav-links ul{
 		display:flex;
@@ -123,7 +124,6 @@ header{
 		justify-content:center;
 	}
 	.mobile-menu{
-		top:3.5rem;
 		transition:all 0.25s ease;
 		left:0;
 	}
