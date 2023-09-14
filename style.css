@@ -70,7 +70,7 @@ header{
 @media screen and (max-width:65rem){
 	.navbar .menu-hamburger{
 		display: block;
-		width:3.5rem;
+		width:3rem;
 		position:absolute;
 		top:50%;
 		left:50%;
