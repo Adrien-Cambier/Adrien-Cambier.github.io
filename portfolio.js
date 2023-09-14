@@ -92,6 +92,10 @@ function toggleMobileMenu() {
   navLinks.classList.toggle('mobile-menu');
   menuHamburger.classList.toggle('toggle');
 }
+function offMobileMenu() {
+  navLinks.classList.remove('mobile-menu');
+  menuHamburger.classList.remove('toggle');
+}
 
 function scrollToSection(event) {
   event.preventDefault();
@@ -104,5 +108,5 @@ function scrollToSection(event) {
     behavior: 'smooth',
   });
 
-  toggleMobileMenu();
+  offMobileMenu();
 }
