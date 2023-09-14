@@ -10,7 +10,7 @@ header{
 	position: fixed;
 	background-color:#2b2b2b;
 	width:100%;
-	height:3.5rem;
+	height:4rem;
 	top:0;
 	z-index:2;
 	margin:0;
@@ -105,9 +105,9 @@ header{
 		width:100%;
 		height:25rem;
 		z-index:-1;
+		top:4rem;
 		left:-150%;
 		transition:all 0.25s ease;
-		top:3.5rem;
 	}
 	.navbar .nav-links ul{
 		display:flex;
@@ -124,6 +124,7 @@ header{
 		justify-content:center;
 	}
 	.mobile-menu{
+		top:4rem;
 		transition:all 0.25s ease;
 		left:0;
 	}
@@ -368,12 +369,12 @@ p{
 	}
 	.entertainement img{
 		width:100%;
-		height:auto;
+		height:20rem;
 		border-radius:1rem;
 		margin-bottom:1.5rem;
 	}
 	.contain .entertainement{
-		width:85%;
+		width:90%;
 		margin-left:auto;
 		margin-right:auto;
 		position:relative;
@@ -420,7 +421,7 @@ p{
 }
 @media screen and (max-width:65em){
 	.parcours{
-		width:85%;
+		width:90%;
 		display:flex;
 		flex-direction:column;
 		align-items:left;
@@ -437,7 +438,7 @@ p{
 	}
 	.parcours img{
 		width:100%;
-		height:auto;
+		height:20rem;
 	}
 }
 span button{
@@ -512,13 +513,13 @@ span button:hover{
 }
 .datas input{
 	height:2rem;
+	width:45%;
 	font-family:LeagueSpartan;
 	border-radius:0.5rem;
 	border: 0.1rem solid #ccc;
 	box-shadow: inset 0 0.1rem 0.1rem rgba(0, 0, 0, .075);
 	padding:0.5rem;
 	background-color:white;
-	width:13.75rem;
 }
 .datas{
 	display:flex;
@@ -615,7 +616,7 @@ h3{
 	left:50%;
 	transform:translateX(-50%);
 }
-@media screen and (max-width:75rem){
+@media screen and (max-width:105rem){
 	.contact-all{
 		display:flex;
 		justify-content:center;
@@ -623,13 +624,11 @@ h3{
 		margin-top:4rem;
 		margin-bottom:4rem;
 		align-items:center;
-		background-color:#f6f6f6;
-		width:85%;
+		background-color:white;
+		width:50rem;
 		position:relative;
 		left:50%;
 		transform:translateX(-50%);
-		padding:0.5rem;
-		border-radius:1rem;
 		box-shadow: 0 0 10px rgba(1,1,1,.2);
 	}
 	.contact-all section{
@@ -644,9 +643,8 @@ h3{
 		padding:0;
 		justify-content:space-between;
 		height:16rem;
-	}
-	.mail .send{
-		border-radius:0.5rem;
+		padding:0.5rem;
+		box-sizing:border-box;
 	}
 	.contain-contact{
 		position:relative;
@@ -654,22 +652,27 @@ h3{
 		flex-direction:column;
 		width:100%;
 		height:15rem;
-		border-radius:1rem;
 		background-color:#f6f6f6;
 		overflow:hidden;
+		border-radius:0;
+	}
+	.contain-contact .computer, textarea, .contain-text{
+		border-radius:0;
 	}
 	.datas input{
 		height:2rem;
 		font-family:LeagueSpartan;
-		border-radius:0.5rem;
 		border: 0.1rem solid #ccc;
 		box-shadow: inset 0 0.1rem 0.1rem rgba(0, 0, 0, .075);
 		padding:0.5rem;
 		background-color:white;
 		width:40%;
+		border-radius:0;
 	}
-	.datas{
-		margin-top: 1rem;
+}
+@media screen and (max-width:65rem){
+	.contact-all{
+		width:90%;
 	}
 }
 html{
@@ -760,7 +763,7 @@ span h1{
 		flex-direction:column;
 		align-items:center;
 		justify-content:center;
-		width:85%;
+		width:90%;
 	}
 	.block_portfolio{
 		width:100%;
